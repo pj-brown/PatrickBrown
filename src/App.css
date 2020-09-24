@@ -2,7 +2,7 @@
   background-color: none;
   font-family: "Noto Sans", sans-serif;
   color: #777777;
-  background-image: url('./assets/background.jpg');
+  background-image: url("./assets/background.jpg");
   background-color: none;
   height: 100vh;
   background-position: center;
@@ -10,4 +10,5 @@
   background-size: cover;
   margin-top: auto;
   clear: both;
+  overflow: hidden;
 }

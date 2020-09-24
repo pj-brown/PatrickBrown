@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter, HashRouter as Router, Route } from 'react-router-dom';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar';
-import background from './assets/background.jpg';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="container">
         <Navbar />
         <Route exact path="/" component={About} />
@@ -17,7 +16,7 @@ function App() {
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
