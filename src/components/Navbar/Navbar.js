@@ -20,17 +20,17 @@ class Navbar extends Component {
         </div>
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/" className={window.location.pathname === "/" || window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+            <Link to="/" className={window.location.hash === "/" || window.location.hash === "/about" ? "nav-link active" : "nav-link"}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/portfolio" className={window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+            <Link to="/portfolio" className={window.location.hash === "/portfolio" ? "nav-link active" : "nav-link"}>
               Portfolio
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link last-link active" : "nav-link last-link"}>
+            <Link to="/contact" className={window.location.hash === "/contact" ? "nav-link last-link active" : "nav-link last-link"}>
               Contact
             </Link>
           </li>
