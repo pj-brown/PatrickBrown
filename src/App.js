@@ -8,7 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="container">
         <Navbar />
         <Route exact path="/" component={About} />
