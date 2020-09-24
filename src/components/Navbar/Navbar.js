@@ -30,7 +30,7 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+            <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link last-link active" : "nav-link last-link"}>
               Contact
             </Link>
           </li>

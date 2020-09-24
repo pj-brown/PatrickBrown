@@ -1,22 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 a {
   text-decoration: none;
 }
 
 .navbar {
-  background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+  background-image: linear-gradient(to right,
+      #e94390,
+      #ff0164,
+      #be0254,
+      #740046,
+      #3b0026,
+      #310042,
+      #5f077f,
+      #5546cb,
+      #3c91c2,
+      #14e0f3);
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  border-bottom: 2px solid #310042;
 }
 
 .navbar-logo {
-  color: white;
+  color: whitesmoke;
   justify-self: start;
   cursor: pointer;
   padding: 8px 0;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .fa-react {
@@ -40,8 +60,14 @@ a {
   padding: 0.5rem 1rem;
 }
 
+.navbar-logo:hover {
+  background-color: #ff0164;
+  border-radius: 4px;
+  transition: all 0.2s east-out;
+}
+
 .nav-link:hover {
-  background-color: #6d76f7;
+  background-color: #ff0164;
   border-radius: 4px;
   transition: all 0.2s east-out;
 }
@@ -63,16 +89,17 @@ a {
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 100vh;
+    height: auto;
     position: absolute;
-    top: 3.80rem;
+    top: 5rem;
     right: -50%;
     opacity: 1;
     transition: all 0.5s ease;
+    border-radius: 0 0 0 10px;
   }
 
   .nav-menu.active {
-    background-color: #6668f4;
+    background-color: #3c91c2;
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -88,8 +115,12 @@ a {
   }
 
   .nav-link:hover {
-    background-color: #7577fa;
+    background-color: #14e0f3;
     border-radius: 0;
+  }
+
+  .last-link:hover {
+    border-radius: 0 0 0 10px;
   }
 
   .navbar-logo {
