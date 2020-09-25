@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
+import Projects from '../components/Projects/Projects';
 
 const Portfolio = () => {
   return (
     <div>
-      hi
+      <div className="page-title">
+        <h1>Portfolio</h1>
+      </div>
+      <Projects></Projects>
     </div>
   )
 }

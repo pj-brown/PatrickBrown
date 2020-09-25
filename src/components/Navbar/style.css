@@ -2,8 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -12,12 +11,13 @@ a {
 
 .navbar {
   background-image: linear-gradient(to right,
+      #fc7f4e,
       #e94390,
       #ff0164,
       #be0254,
       #740046,
-      #3b0026,
-      #310042,
+      #530237,
+      #460067,
       #5f077f,
       #5546cb,
       #3c91c2,
@@ -31,18 +31,14 @@ a {
 }
 
 .navbar-logo {
-  color: whitesmoke;
+  color: white;
   justify-self: start;
   cursor: pointer;
-  padding: 8px 0;
+  padding: 0.5rem 1rem;
   font-size: 24px;
   font-weight: bold;
 }
 
-.fa-react {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-}
 
 .nav-menu {
   display: grid;
@@ -55,21 +51,24 @@ a {
 }
 
 .nav-link {
+  font-weight: bold;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .navbar-logo:hover {
-  background-color: #ff0164;
+  background-color: #5546cb;
+  color: #ff0164;
   border-radius: 4px;
-  transition: all 0.2s east-out;
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-link:hover {
-  background-color: #ff0164;
+  background-color: #e94390;
+  /* color: #14e0f3; */
   border-radius: 4px;
-  transition: all 0.2s east-out;
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .fa-bars {
@@ -99,7 +98,19 @@ a {
   }
 
   .nav-menu.active {
-    background-color: #3c91c2;
+    /* background-color: #3c91c2; */
+    background-image: linear-gradient(to right,
+        #fc7f4e,
+        #e94390,
+        #ff0164,
+        /* #be0254, */
+        /* #740046, */
+        /* #3b0026, */
+        /* #310042, */
+        /* #5f077f, */
+        #5546cb,
+        #3c91c2,
+        #14e0f3);
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -108,6 +119,7 @@ a {
   }
 
   .nav-link {
+    font-weight: bold;
     text-align: center;
     padding: 2rem 0;
     width: 100%;
@@ -115,7 +127,13 @@ a {
   }
 
   .nav-link:hover {
-    background-color: #14e0f3;
+    background-image: linear-gradient(to right,
+        #14e0f3,
+        #5546cb,
+        #5546cb,
+        #5546cb,
+        #14e0f3);
+    color: #ff0164;
     border-radius: 0;
   }
 
@@ -127,10 +145,17 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
-    padding: 4px;
+    transform: translate(15%, 37%);
+    padding: 0.5rem 1rem;
+
   }
 
+  /* color: white;
+  justify-self: start;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  font-weight: bold; */
   .menu-icon {
     display: block;
     position: absolute;
@@ -145,6 +170,4 @@ a {
     color: white;
     font-size: 2rem;
   }
-
-
 }

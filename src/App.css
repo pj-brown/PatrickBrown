@@ -1,6 +1,6 @@
-.container {
+.app-container {
   background-color: none;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #777777;
   background-image: url("./assets/background.jpg");
   background-color: none;
@@ -10,5 +10,10 @@
   background-size: cover;
   margin-top: auto;
   clear: both;
-  overflow: hidden;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }

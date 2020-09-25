@@ -1,0 +1,12 @@
+.page-title {
+  width: 100%;
+  background: none;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.about {}
