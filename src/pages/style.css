@@ -1,3 +1,10 @@
+.about,
+.contact,
+.portfolio {
+  height: 110%;
+  position: relative;
+}
+
 .page-title {
   width: 100%;
   background: none;
@@ -7,6 +14,15 @@
   flex-direction: column;
   text-align: center;
   vertical-align: middle;
+  padding: 25px;
 }
 
 .about {}
+
+@media screen and (max-width: 960px) {
+  .page-title {
+    /* transform: translate(0, -10%); */
+    padding: 25px;
+    transition: all 0.1s ease;
+  }
+}

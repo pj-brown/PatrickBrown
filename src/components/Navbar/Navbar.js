@@ -12,7 +12,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar" >
-        <Link className="navbar-logo" style={{ textDecoration: "none" }} to="/">
+        <Link className="navbar-brand" style={{ textDecoration: "none" }} to="/">
           Patrick Brown
       </Link>
         <div className="menu-icon" onClick={this.handleClick}>
@@ -32,6 +32,11 @@ class Navbar extends Component {
           <li className="nav-item">
             <Link to="/contact" className={window.location.hash === "/contact" ? "nav-link last-link active" : "nav-link last-link"}>
               Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/resume" className={window.location.hash === "/resume" ? "nav-link last-link active" : "nav-link last-link"}>
+              Resume
             </Link>
           </li>
         </ul>

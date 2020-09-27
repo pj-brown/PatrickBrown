@@ -10,6 +10,9 @@ a {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background-image: linear-gradient(to right,
       #fc7f4e,
       #e94390,
@@ -30,9 +33,8 @@ a {
   border-bottom: 2px solid #310042;
 }
 
-.navbar-logo {
+.navbar-brand {
   color: white;
-  justify-self: start;
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-size: 24px;
@@ -57,7 +59,7 @@ a {
   padding: 0.5rem 1rem;
 }
 
-.navbar-logo:hover {
+.navbar-brand:hover {
   background-color: #5546cb;
   color: #ff0164;
   border-radius: 4px;
@@ -85,6 +87,13 @@ a {
   }
 
   .nav-menu {
+    background-image: linear-gradient(to right,
+        #fc7f4e,
+        #e94390,
+        #ff0164,
+        #5546cb,
+        #3c91c2,
+        #14e0f3);
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -98,19 +107,6 @@ a {
   }
 
   .nav-menu.active {
-    /* background-color: #3c91c2; */
-    background-image: linear-gradient(to right,
-        #fc7f4e,
-        #e94390,
-        #ff0164,
-        /* #be0254, */
-        /* #740046, */
-        /* #3b0026, */
-        /* #310042, */
-        /* #5f077f, */
-        #5546cb,
-        #3c91c2,
-        #14e0f3);
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -141,21 +137,13 @@ a {
     border-radius: 0 0 0 10px;
   }
 
-  .navbar-logo {
+  .navbar-brand {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(15%, 37%);
-    padding: 0.5rem 1rem;
-
+    transform: translate(12%, 33%);
   }
 
-  /* color: white;
-  justify-self: start;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-size: 24px;
-  font-weight: bold; */
   .menu-icon {
     display: block;
     position: absolute;

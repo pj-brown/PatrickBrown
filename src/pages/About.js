@@ -1,11 +1,10 @@
 import React from 'react'
+import AboutCard from '../components/AboutCard/AboutCard'
 
 const About = () => {
   return (
     <div className="about">
-      <div className="page-title">
-        <h1>About</h1>
-      </div>
+      <AboutCard></AboutCard>
     </div>
   )
 }

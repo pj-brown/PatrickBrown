@@ -2,7 +2,7 @@
   background-color: none;
   font-family: 'Noto Sans JP', sans-serif;
   color: #777777;
-  background-image: url("./assets/background.jpg");
+  background-image: url("./images/background.webp");
   background-color: none;
   height: 100vh;
   background-position: center;
@@ -11,6 +11,8 @@
   margin-top: auto;
   clear: both;
   overflow: scroll;
+  overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar {
