@@ -47,8 +47,6 @@
   color: white;
 }
 
-.fa-react:hover {}
-
 @media screen and (max-width: 640px) {
 
   .footer {
@@ -57,15 +55,5 @@
 
   .footer-icons {
     margin: auto;
-  }
-
-  .fa-linkedin,
-  .fa-github-square,
-  .fa-twitter-square {
-    font-size: 25px;
-  }
-
-  .fa-file-alt {
-    font-size: 24px;
   }
 }
