@@ -28,11 +28,12 @@
   font-weight: lighter;
 }
 
-.footer-icons {
-  margin: auto auto auto -50px;
+.footer-icon {
+  color: white;
 }
 
 .footer-link {
+  color: white;
   font-size: 22px;
   padding-left: 20px;
 }

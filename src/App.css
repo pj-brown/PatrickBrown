@@ -29,3 +29,7 @@
 .content-wrap {
   flex: 1;
 }
+
+a:visited {
+  color: none;
+}

@@ -22,6 +22,12 @@
   padding: 25px;
 }
 
+.google-link:hover {
+  background-color: transparent;
+  color: #ff0164;
+  transition: .15s ease-in-out;
+}
+
 
 @media screen and (max-width: 960px) {
   .page-title {

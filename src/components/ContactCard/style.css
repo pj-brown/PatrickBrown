@@ -1,6 +1,6 @@
 .contact-card-container {
   width: 100vw;
-  padding-top: 50px;
+  padding-top: 25vh;
   display: grid;
   justify-content: space-around;
   grid-template-columns: 90%;
@@ -80,6 +80,7 @@
 }
 
 .contact-link {
+  color: #870dc0;
   font-size: 50px;
   margin: 15px 20px;
   padding: 0.25% 1.75%;
