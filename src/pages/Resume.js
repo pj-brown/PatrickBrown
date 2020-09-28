@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Iframe from '../components/Iframe/Iframe';
+import './style.css';
 
 const Resume = () => {
   return (
     <div className="resume">
-      <p>Open a PDF file <a href="../images/PatrickBrownResume.pdf">example</a></p>
-
-      {/* <iframe src="../images/PatrickBrownResume.pdf" height="auto" width="auto"></iframe> */}
+      <Iframe></Iframe>
     </div>
   )
 }

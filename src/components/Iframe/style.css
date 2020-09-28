@@ -1,0 +1,11 @@
+.resume-container {
+  display: flex;
+}
+
+.resume {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 760px;
+  border-style: none;
+}

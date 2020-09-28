@@ -5,6 +5,7 @@ import "./style.css";
 class Navbar extends Component {
   state = { clicked: false }
 
+
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
@@ -20,22 +21,22 @@ class Navbar extends Component {
         </div>
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/" className={window.location.hash === "/" || window.location.hash === "/about" ? "nav-link active" : "nav-link"}>
+            <Link to="/" className="nav-link" onClick={this.handleClick}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/portfolio" className={window.location.hash === "/portfolio" ? "nav-link active" : "nav-link"}>
+            <Link to="/portfolio" className="nav-link" onClick={this.handleClick}>
               Portfolio
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className={window.location.hash === "/contact" ? "nav-link last-link active" : "nav-link last-link"}>
+            <Link to="/contact" className="nav-link" onClick={this.handleClick}>
               Contact
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/resume" className={window.location.hash === "/resume" ? "nav-link last-link active" : "nav-link last-link"}>
+            <Link to="/resume" className="nav-link" onClick={this.handleClick}>
               Resume
             </Link>
           </li>

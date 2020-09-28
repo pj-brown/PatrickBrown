@@ -9,7 +9,7 @@ const ContactCard = () => {
           <h1 className="contact-card-title">Contact</h1>
           <hr className="contact-break"></hr>
           <div className="contact-card-text">
-            <h3><a style={{ color: "#870dc0" }} href="mailto: pjbrown05@gmail.com">Email</a></h3>
+            <h3><a style={{ color: "#870dc0" }} href="mailto: pjbrown05@gmail.com">Email: pjbrown05@gmail.com</a></h3>
           </div>
           <div className="contact-link-container">
             <a className="contact-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrick-brown-9a3348b5/"><i className="fab fa-linkedin" alt="resume"></i></a>

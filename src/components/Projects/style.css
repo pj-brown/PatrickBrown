@@ -5,12 +5,10 @@
 .card-container {
   width: 80vw;
   margin: auto;
-  padding: 10px;
   display: grid;
   justify-content: space-around;
   grid-template-columns: 31% 31% 31%;
   background-color: transparent;
-  /* padding: 10px; */
 }
 
 .card-box {

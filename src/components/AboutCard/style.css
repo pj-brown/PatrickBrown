@@ -3,20 +3,18 @@
 }
 
 .about-card-container {
-  width: 80vw;
-  margin: auto;
-  padding: 10px;
+  width: 100vw;
+  /* margin: auto; */
+  padding-top: 50px;
   display: grid;
   justify-content: space-around;
   grid-template-columns: 90%;
   background-color: transparent;
-  /* padding: 10px; */
 }
 
 .about-card-box {
   display: flex;
   position: relative;
-  top: 100px;
   background-image: linear-gradient(215deg,
       #fc7f4e,
       #e94390,
@@ -25,10 +23,9 @@
       #5546cb,
       #3c91c2,
       #14e0f3);
-  width: 100%;
-  margin-top: 20px;
+  width: auto;
+  height: auto;
   margin: auto;
-  padding: 30px 0;
   margin-bottom: 50px;
   border-radius: 5px;
   box-sizing: border-box;
@@ -40,10 +37,12 @@
   position: relative;
   background-color: #14e0f3;
   padding: 10px;
-  width: 95%;
-  margin: auto;
+  width: 900px;
+  height: auto;
+  margin: 2%;
   border-radius: 5px;
   box-shadow: -5px 7px rgba(6, 64, 70, 0.27);
+  box-sizing: content-box;
 }
 
 .profile-img {
@@ -75,8 +74,9 @@
 .about-card-text {
   color: #870dc0;
   text-align: left;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 5px;
 }
 
 .btn-link {
@@ -109,7 +109,7 @@
   border: 2px solid #ff0164;
   background-color: #14e0f3;
   border-radius: 4px;
-  transition: all .33s ease-in;
+  transition: all 0.33s ease-in;
 }
 
 .right-btn {
@@ -129,6 +129,7 @@
   border-width: 2px;
   border-radius: 2px;
   margin: 0.5em auto;
+  width: 20%;
 }
 
 @media screen and (max-width: 960px) {
@@ -136,20 +137,27 @@
     width: 100vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 47% 47%;
+    grid-template-columns: 90%;
     background-color: transparent;
-    /* padding: 10px; */
+  }
+
+  .about-card-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-img {
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 640px) {
   .about-card-container {
-    justify-content: center;
-    width: 100vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 95%;
-    background-color: transparent;
-    /* padding: 10px; */
+    padding-top: 0;
   }
 }
